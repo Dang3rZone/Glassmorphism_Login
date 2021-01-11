@@ -44,6 +44,14 @@ section .color:nth-child(3) {
 .box {
   position: relative;
 }
+.box .square {
+  position: absolute;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
 .container {
   position: relative;
   width: 400px;
@@ -115,4 +123,14 @@ section .color:nth-child(3) {
   cursor: pointer;
   margin-bottom: 20px;
   font-weight: 600;
+}
+
+.forget {
+  margin-top: 5px;
+  color: #fff;
+}
+
+.forget a {
+  font-weight: 600;
+  color: #fff;
 }
